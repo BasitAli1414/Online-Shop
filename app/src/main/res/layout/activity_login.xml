@@ -150,8 +150,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
-            android:textColor="@color/colorSecondaryText"
             android:text="Don't have an account?"
+            android:textColor="@color/colorSecondaryText"
             android:textSize="16dp" />
 
         <com.bashoo.onlineshop.util.CustomTextView
