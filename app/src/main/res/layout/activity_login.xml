@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.LoginActivity">
+
+    <FrameLayout
+        android:id="@+id/login_frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/image_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="22dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/online_shop" />
+
+        <com.bashoo.onlineshop.util.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:text="Online Shop"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </FrameLayout>
+
+    <com.bashoo.onlineshop.util.CustomTextView
+        android:id="@+id/login_titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Login"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/title_textSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_frameLayout" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_emailTextInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Email Id"
+        android:textColorHint="@color/colorSecondaryText"
+        app:boxStrokeColor="@color/colorPrimary"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_titleTextView">
+
+        <com.bashoo.onlineshop.util.CustomEditText
+            android:id="@+id/login_emailEditTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:padding="@dimen/et_padding"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/et_textSize"
+            tools:text="abc@gmail.com" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_passwordTextInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20sp"
+        android:layout_marginEnd="16dp"
+        android:hint="Password"
+        android:textColorHint="@color/colorSecondaryText"
+        app:boxStrokeColor="@color/black"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_emailTextInputLayout">
+
+        <com.bashoo.onlineshop.util.CustomEditText
+            android:id="@+id/login_passwordEditTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            android:padding="@dimen/et_padding"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/et_textSize"
+            tools:text="12345@abc" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.bashoo.onlineshop.util.CustomTextViewRegular
+        android:id="@+id/login_forgot_passwordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:padding="@dimen/clickable_textView_padding"
+        android:text="Forgot Password"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="@dimen/forgot_password_textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_passwordTextInputLayout" />
+
+    <com.bashoo.onlineshop.util.CustomButton
+        android:id="@+id/login_Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_background"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:paddingTop="@dimen/button_padding"
+        android:paddingBottom="@dimen/button_padding"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_forgot_passwordTextView" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_Button">
+
+        <com.bashoo.onlineshop.util.CustomTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/colorSecondaryText"
+            android:text="Don't have an account?"
+            android:textSize="16dp" />
+
+        <com.bashoo.onlineshop.util.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:gravity="center"
+            android:text="Register"
+            android:textColor="@color/colorThemePink"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

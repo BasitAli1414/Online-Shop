@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "788654167948",
+    "project_id": "online-shop-c4b98",
+    "storage_bucket": "online-shop-c4b98.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:788654167948:android:47b0f997a58df1c600a8a9",
+        "android_client_info": {
+          "package_name": "com.bashoo.onlineshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "788654167948-ta922vnt7q727dprs7kl44185lsvuc64.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bashoo.onlineshop",
+            "certificate_hash": "de803e056a4eafae179554f9dcff1ba35a6cd3c1"
+          }
+        },
+        {
+          "client_id": "788654167948-t1mki3bjulbo731nq7rldtmgqmhcju5r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBArqdhh67Hwb5EyBhwGTJozT0dgxtp_H8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "788654167948-t1mki3bjulbo731nq7rldtmgqmhcju5r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
