@@ -11,15 +11,17 @@
         android:id="@+id/register_toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
+        android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <com.bashoo.onlineshop.util.CustomTextView
+        <com.bashoo.onlineshop.util.CustomTextViewRegular
             android:id="@+id/register_createTextView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center"
+            android:padding="16dp"
             android:text="CREATE AN ACCOUNT"
             android:textColor="@color/colorPrimaryText"
             android:textSize="18sp" />
@@ -136,7 +138,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/register_emailTextInputLayout">
 
                 <com.bashoo.onlineshop.util.CustomEditText
-                    android:id="@+id/login_passwordEditTextView"
+                    android:id="@+id/register_passwordEditTextView"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:inputType="textPassword"

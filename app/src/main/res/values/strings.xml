@@ -1,5 +1,17 @@
 <resources>
     <string name="app_name">Online Shop</string>
-    
+
+    //registerActivity strings
     <string name="terms_and_conditions">I Agree To The <u>  Terms &amp; Conditions </u> </string>
+
+    <string name="error_msg_first_name">Please enter the first name.</string>
+    <string name="error_msg_last_name">Please enter the last name.</string>
+    <string name="error_msg_email">Please enter the email id.</string>
+    <string name="error_msg_password">Please enter the password.</string>
+    <string name="error_msg_confirm_password">Please enter the confirm password.</string>
+    <string name="error_msg_mismatch_pass">Password and confirm password not match.</string>
+    <string name="error_msg_terms_and_condition">Please agree terms and conditions.</string>
+    <string name="register_successfully">Thanks for registering!</string>
+
+
 </resources>
